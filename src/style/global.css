@@ -1,0 +1,13 @@
+div.header {
+
+background-color:rebeccapurple;
+min-height: 150px;
+
+
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+   
+}
