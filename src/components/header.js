@@ -1,18 +1,11 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
-
+import Navtop from "./nav-top"
 
 const Header = ({ siteTitle }) => (
-  <header
-  
-  >
+  <header className="topheader" >
     <div className="header">
-      <h1>
-        <Link to="/" >
-          {siteTitle}
-        </Link>
-      </h1>
+     <Navtop />
     </div>
   </header>
 )

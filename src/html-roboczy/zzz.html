@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0%;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #p-robo {
+            display: none;
+        }
+
+        div.contener {
+            width: 100vw;
+            min-height: 320px;
+            background-color: lightblue;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo {
+            height: 100px;
+            min-width: 100px;
+            background-color: lightgreen;
+        }
+
+        .search {
+
+            min-width: 100px;
+            background-color: magenta;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: center;
+            align-items: stretch;
+
+        }
+
+        form {
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: center;
+        }
+
+        input {
+            height: 45px;
+            margin: 15px 0;
+        }
+
+        #szukaj {
+            width: 250px;
+        }
+
+        .topmenu {
+
+
+            min-width: 100px;
+            background-color: olivedrab;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 25px 0;
+        }
+
+        div.topmenu ul {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        div.topmenu ul li {
+            list-style: none;
+            padding: 10px 25px;
+            border: 2px solid black;
+            margin: 10px 10px;
+        }
+
+
+
+        @media(min-width:450px) {
+
+            div.topmenu ul {
+                flex-direction: row;
+                flex-wrap: wrap;
+
+
+            }
+
+            @media(min-width:760px) {
+
+                #p-robo {
+                    display: contents;
+                    font-size: 25px;
+                }
+
+                div.contener {
+                    display: none;
+
+                }
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <p id="p-robo">Zmień szerokośc na 750px!</p>
+    <div class="contener">
+
+        <div class="logo nav1">logo</div>
+        <div class="search nav1">
+
+            <form action="">
+                <input id="szukaj" type="text">
+                <input type="button" value="szukaj">
+            </form>
+
+
+        </div>
+        <div class="topmenu nav2">
+
+            <ul>
+                <li><a href="#"></a>Link</li>
+                <li><a href="#"></a>Link</li>
+                <li><a href="#"></a>Link</li>
+                <li><a href="#"></a>Link</li>
+            </ul>
+
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
