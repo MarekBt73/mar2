@@ -1,14 +1,12 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import Navtop from "./navtop"
-import './header.css'
+import "./style/header.css"
 
-
+          
 const Header = ({ siteTitle }) => (
   <header className="topheader" >
-    <div className="header">
-     <Navtop />
-    </div>
+     <Navtop/>
   </header>
 )
 

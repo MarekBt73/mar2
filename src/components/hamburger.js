@@ -1,5 +1,5 @@
 import * as React from "react"
-import "./hamburger.css"
+import "./style/hamburger.css"
 
 const Hamburger = () => (
 
