@@ -1,0 +1,17 @@
+div.hamburger{
+    height: 40px;
+    width: 50px;
+   
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    top:10px;
+    left:10px;
+    justify-content: space-around;
+}
+
+div.hamburger>div {
+
+height: 6px;
+background-color: black;
+}
