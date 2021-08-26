@@ -1,24 +1,34 @@
 import * as React from "react"
-
-import Navtop from "./navtop"
 import "./style/header.css"
 import styled from "styled-components"
+import Linksnav from "./linksnav"
 
+ 
 const HeaderStyle = styled.header`
+
 height: 50px;
-background-color: #fff666;
+background-color: #000000;
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 justify-content: space-around;
-width: 100vw;
+width: 100%;
+background-color: blue;
+
+@media screen and (max-width: 760px){
+  
+  height:auto
+  }
+position: relative;
+
 `
+
 
           
 const Header = () => (
 
   <HeaderStyle>
-     <Navtop/>
+  <Linksnav/>
   </HeaderStyle>
 )
 

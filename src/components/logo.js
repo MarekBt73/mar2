@@ -7,15 +7,11 @@ import styled from "styled-components"
 const LogoDiv = styled.div`
 display: flex;
 flex-direction: row;
-
+justify-content: center;
 width: 15vw;
 `
-const LogoH1 = styled.h1`
-font-size: 14px;
-color: black;
-text-decoration: none;
 
-`
+
 
 const Logo =()=>(
 
