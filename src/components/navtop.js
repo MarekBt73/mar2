@@ -1,24 +1,31 @@
 import * as React from "react"
 import "./style/navtop.css"
-import Hamburger from "./hamburger"
-import Searchtop from "./searchtop"
+
 import Logo from "./logo"
 import Linksnav from "./linksnav"
+import styled from 'styled-components'
+
+
+const NavStyled = styled.nav`
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+
+width: 100vw;
+align-content: center; 
+align-items: center;
+justify-content: space-between;
+`
 
 const Navtop = () => (
 <>
 
-
-
-<div>
     
-      <nav className="contener">
+      <NavStyled className="contener">
         <Logo />
-        <Searchtop />
-        <Hamburger />
         <Linksnav />
-    </nav>
-</div>
+    </NavStyled>
+
 </>
 )
 

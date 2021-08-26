@@ -1,5 +1,8 @@
 import * as React from "react"
 import "./style/hamburger.css"
+import './style/global.css'
+
+
 
 const Hamburger = () => (
 

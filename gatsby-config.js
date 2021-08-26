@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Glazurnik-Malarz`,
+    title: `Blog-Marka`,
     description: `Jeżeli chcesz się czegoś nauczyć powinieneś ćwiczyć - ćwiczyć i jeszcze raz ćwiczyć!`,
     author: `@gatsbyjs`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,

@@ -1,21 +1,26 @@
 import * as React from "react"
-import PropTypes from "prop-types"
+
 import Navtop from "./navtop"
 import "./style/header.css"
+import styled from "styled-components"
+
+const HeaderStyle = styled.header`
+height: 50px;
+background-color: #fff666;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+width: 100vw;
+`
 
           
-const Header = ({ siteTitle }) => (
-  <header className="topheader" >
+const Header = () => (
+
+  <HeaderStyle>
      <Navtop/>
-  </header>
+  </HeaderStyle>
 )
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header

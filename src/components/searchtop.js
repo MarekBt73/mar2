@@ -1,14 +1,24 @@
 import * as React from "react"
 import "./style/searchtop.css"
+import styled from "styled-components"
+
+const FormStyle = styled.form`
+
+width: 75vw;
+ text-align: center;
+
+`
+
+
 
 
 const Searchtop =() =>(
 
 
-     <form action >
+     <FormStyle action >
          <input  type="text" className="search" id="szukaj" />
          <input type="button" defaultValue="szukaj" />
-     </form>
+     </FormStyle>
 
  )
 
