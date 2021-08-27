@@ -1,5 +1,5 @@
 import React from "react"
-import "./style/logo.css"
+
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"

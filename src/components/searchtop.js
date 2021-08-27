@@ -1,5 +1,5 @@
 import * as React from "react"
-import "./style/searchtop.css"
+
 import styled from "styled-components"
 
 const FormStyle = styled.form`

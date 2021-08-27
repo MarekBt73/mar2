@@ -1,5 +1,4 @@
 import * as React from "react"
-import "./style/header.css"
 import styled from "styled-components"
 import Linksnav from "./linksnav"
 
@@ -13,7 +12,7 @@ flex-direction: row;
 flex-wrap: wrap;
 justify-content: space-around;
 width: 100%;
-background-color: blue;
+background-color: #a605e8;
 
 @media screen and (max-width: 760px){
   

@@ -1,5 +1,5 @@
 import * as React from "react"
-import "./style/navtop.css"
+
 
 import Logo from "./logo"
 import Linksnav from "./linksnav"
