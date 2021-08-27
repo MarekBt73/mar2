@@ -1,9 +1,8 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
 import Logo from "./logo"
 import Hamburger from "./hamburger"
-
+import LinksStyle from "./linkstyles"
 
 const LinkContener = styled.div`
 width: 1450px;
@@ -14,6 +13,9 @@ justify-content: space-around;
 
 @media screen and (max-width: 759px){
 flex-direction: column;
+position: relative;
+
+
 }
 `
 
@@ -32,40 +34,52 @@ const LinkMenu2 = styled.div`
 width: 20%;
 display: flex;
 flex-direction: row;
-
 align-items: center;
 justify-content: center;
+
+  
+
 @media screen and (max-width: 760px){
 width: auto;
-position: absolute;
-top: 0;
-right: 0;
+width: auto;
+    position: absolute;
+    top: 6px;
+    right: 72px;
 }
 `
 
-const ContHamburger = styled.div`
+
+
+const HamburgerStyled = styled(Hamburger)`
+
 @media screen and (max-width: 759px){
 display: flex;
 flex-direction: column;
-align-items: center
+align-items: center;
+position: absolute;
+    top: 7px;
+    left: 15vw;
 }
+
 `
 
 const Linksnav = () => (
 <>
  <LinkContener>
-  <Logo/>
+   
+           <Logo  className="logostyls" />
+   
     <LinkMenu >
-        <Link className="menulins" to ="/"> Home </Link>
-        <Link className="menulins" to ="#">link do strony</Link>
-        <Link className="menulins" to ="#">link do strony</Link>
-        <Link className="menulins" to ="#">link do strony</Link>
+        <LinksStyle  to ="/"> Home </LinksStyle>
+        <LinksStyle  to ="#">link do strony</LinksStyle>
+        <LinksStyle  to ="#">link do strony</LinksStyle>
+        <LinksStyle  to ="#">link do strony</LinksStyle>
     </LinkMenu >
-      <ContHamburger>
-             <Hamburger className="hamburgerstyles" />
-      </ContHamburger>
+      
+      <HamburgerStyled/>
+      
      <LinkMenu2 >
-        <Link className="menulins"  to ="#">link do strony</Link>
+        <LinksStyle  to ="#">Szukaj</LinksStyle>
      </LinkMenu2 >
   </LinkContener>
 </>                 

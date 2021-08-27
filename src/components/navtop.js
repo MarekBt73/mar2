@@ -1,6 +1,4 @@
 import * as React from "react"
-
-
 import Logo from "./logo"
 import Linksnav from "./linksnav"
 import styled from 'styled-components'
