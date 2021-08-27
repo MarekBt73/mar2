@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Logo from "./logo"
-import Hamburger from "./hamburger"
+
 import LinksStyle from "./linkstyles"
 
 const LinkContener = styled.div`
@@ -49,20 +49,6 @@ width: auto;
 `
 
 
-
-const HamburgerStyled = styled(Hamburger)`
-
-@media screen and (max-width: 759px){
-display: flex;
-flex-direction: column;
-align-items: center;
-position: absolute;
-    top: 7px;
-    left: 15vw;
-}
-
-`
-
 const Linksnav = () => (
 <>
  <LinkContener>
@@ -70,14 +56,12 @@ const Linksnav = () => (
            <Logo  className="logostyls" />
    
     <LinkMenu >
-        <LinksStyle  to ="/"> Home </LinksStyle>
-        <LinksStyle  to ="#">link do strony</LinksStyle>
-        <LinksStyle  to ="#">link do strony</LinksStyle>
-        <LinksStyle  to ="#">link do strony</LinksStyle>
-    </LinkMenu >
-      
-      <HamburgerStyled/>
-      
+        <LinksStyle  to ="/">Home</LinksStyle>
+        <LinksStyle  to ="#">Realzacje</LinksStyle>
+        <LinksStyle  to ="#">Cennik</LinksStyle>
+        <LinksStyle  to ="#">O mnie</LinksStyle>
+        <LinksStyle  to ="#">Kontakt</LinksStyle>
+     </LinkMenu >
      <LinkMenu2 >
         <LinksStyle  to ="#">Szukaj</LinksStyle>
      </LinkMenu2 >

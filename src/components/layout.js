@@ -3,6 +3,34 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import Footer from "./footer"
+import styled from "styled-components"
+
+
+
+
+const ConteinerMax = styled.div`
+display: flex;
+flex-direction: row;
+justify-content: center;
+width: 100%;
+
+`
+
+const ConteinerWeb = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+width: 100%;
+
+`
+const MainStyle = styled.main`
+margin: 25px;
+`
+
+
+
+
 
 
 const Layout = ({ children }) => {
@@ -18,11 +46,13 @@ const Layout = ({ children }) => {
 
   return (
     <>
-    <div className="webcontener">
+    <ConteinerMax>
+    <ConteinerWeb>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <main>{children}</main>
-      </div>
+      <MainStyle>{children}</MainStyle>
       <Footer/>
+      </ConteinerWeb>
+      </ConteinerMax>
      </>
   )
 }

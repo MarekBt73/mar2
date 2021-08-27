@@ -7,7 +7,7 @@ const LogoDiv = styled.div`
 display: flex;
 flex-direction: row;
 justify-content: center;
-width: 15vw;
+width: 75px;
 `
 
 
