@@ -57,7 +57,7 @@ const Linksnav = () => (
    
     <LinkMenu >
         <LinksStyle  to ="/">Home</LinksStyle>
-        <LinksStyle  to ="#">Realzacje</LinksStyle>
+        <LinksStyle  to ="/page-2/">Realzacje</LinksStyle>
         <LinksStyle  to ="#">Cennik</LinksStyle>
         <LinksStyle  to ="#">O mnie</LinksStyle>
         <LinksStyle  to ="#">Kontakt</LinksStyle>
