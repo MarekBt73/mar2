@@ -1,7 +1,9 @@
 import React from "react"
 import styled from "styled-components"
 import Logo from "./logo"
-
+import HomeIcon from "./icon/home-icon"
+import SearchIcon from "./icon/search-icon"
+import HmburgerIcon from "./icon/hamburger-icon"
 import LinksStyle from "./linkstyles"
 
 const LinkContener = styled.div`
@@ -56,14 +58,16 @@ const Linksnav = () => (
            <Logo  className="logostyls" />
    
     <LinkMenu >
-        <LinksStyle  to ="/">Home</LinksStyle>
+
+        <LinksStyle  to ="/"><HomeIcon/>Home</LinksStyle>
         <LinksStyle  to ="/page-2/">Realzacje</LinksStyle>
         <LinksStyle  to ="#">Cennik</LinksStyle>
         <LinksStyle  to ="#">O mnie</LinksStyle>
         <LinksStyle  to ="#">Kontakt</LinksStyle>
      </LinkMenu >
      <LinkMenu2 >
-        <LinksStyle  to ="#">Szukaj</LinksStyle>
+        <LinksStyle  to ="#"><HmburgerIcon/>Menu</LinksStyle>
+        <LinksStyle  to ="#"><SearchIcon/> Szukaj</LinksStyle>
      </LinkMenu2 >
   </LinkContener>
 </>                 
