@@ -66,12 +66,19 @@ justify-content: center;
 display: none;
 }
 `
+const Logostyl = styled(Logo)`
+position: absolute;
+top: 10px;
+left: 10px;
+
+
+`
 
 const Linksnav = () => (
 <>
  <LinkContener>
-        <Logo  className="logostyls" />
       <LinkMenu >
+         <Logostyl />
         <LinksStyle  to ="/"><HomeIcon /> Home</LinksStyle>
         <LinksStyle  to ="/page-2/">Realzacje</LinksStyle>
         <LinksStyle  to ="#">Cennik</LinksStyle>
@@ -79,6 +86,7 @@ const Linksnav = () => (
         <LinksStyle  to ="#">Kontakt</LinksStyle>
      </LinkMenu >
      <LinkMenu2 >
+        <Logostyl />
         <LinksStyle2  to ="#"><SearchIcon/></LinksStyle2>
         <LinksStyle2  to ="#"><HmburgerIcon/></LinksStyle2>
      </LinkMenu2 >

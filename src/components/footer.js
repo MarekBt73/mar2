@@ -1,12 +1,18 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import styled from "styled-components"
+
+const FooterStyle= styled.footer`
+background-color: red;
+
+`
 
 const Footer = () => (
-  <footer>
-    < >
+  <>
+  <FooterStyle>
       <h1><Link to="/" > <h4>© Wszystkie prawa zastrzeżone</h4></Link> </h1>
-    </>
-  </footer>
+  </FooterStyle>
+  </>
 )
 
 export default Footer

@@ -7,8 +7,8 @@ import styled from "styled-components"
 const LogoDiv = styled.div`
 display: flex;
 flex-direction: row;
-justify-content: center;
-width: 75px;
+justify-content: flex-end;
+width: 56px;
 `
 
 
