@@ -7,6 +7,7 @@ import { faSearch} from '@fortawesome/free-solid-svg-icons'
 
 
 
+
 library.add(fas, fab)
 
 const SearchIcon = () =>(

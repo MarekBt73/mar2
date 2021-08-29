@@ -6,6 +6,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faHome} from '@fortawesome/free-solid-svg-icons'
 
 
+
 library.add(fas, fab)
 
 const FaHome = () =>(

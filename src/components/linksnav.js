@@ -5,17 +5,23 @@ import HomeIcon from "./icon/home-icon"
 import SearchIcon from "./icon/search-icon"
 import HmburgerIcon from "./icon/hamburger-icon"
 import LinksStyle from "./linkstyles"
+import LinksStyle2 from "./linkstyles2"
 import SearchTop from './search1'
 
 
 
 const LinkContener = styled.div`
-width: 1450px;
+width: 1300px;
 display: flex;
 flex-direction: row;
 flex-wrap: nowrap;
-
 justify-content: flex-start;
+
+@media screen and (max-width: 760px){
+justify-content: center;
+
+}
+
 `
 
 
@@ -49,6 +55,12 @@ display: none;
 `
 const LinkMenu3 = styled.div`
 width: 20%;
+display: flex;
+align-content: center;
+flex-direction: column;
+align-items: flex-end;
+justify-content: center;
+
 
 @media screen and (max-width: 761px){
 display: none;
@@ -67,8 +79,8 @@ const Linksnav = () => (
         <LinksStyle  to ="#">Kontakt</LinksStyle>
      </LinkMenu >
      <LinkMenu2 >
-        <LinksStyle  to ="#"><HmburgerIcon/></LinksStyle>
-        <LinksStyle  to ="#"><SearchIcon/></LinksStyle>
+        <LinksStyle2  to ="#"><SearchIcon/></LinksStyle2>
+        <LinksStyle2  to ="#"><HmburgerIcon/></LinksStyle2>
      </LinkMenu2 >
      <LinkMenu3 >
           <SearchTop/>
