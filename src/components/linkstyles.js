@@ -20,6 +20,5 @@ color: #d9d9d9;
 
 
 }
-
 `
 export default LinksStyle
