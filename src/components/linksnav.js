@@ -5,21 +5,19 @@ import HomeIcon from "./icon/home-icon"
 import SearchIcon from "./icon/search-icon"
 import HmburgerIcon from "./icon/hamburger-icon"
 import LinksStyle from "./linkstyles"
+import SearchTop from './search1'
+
+
 
 const LinkContener = styled.div`
 width: 1450px;
 display: flex;
 flex-direction: row;
 flex-wrap: nowrap;
-justify-content: space-around;
 
-@media screen and (max-width: 759px){
-flex-direction: column;
-position: relative;
-
-
-}
+justify-content: flex-start;
 `
+
 
 const LinkMenu = styled.div`
 width: 85%;
@@ -33,44 +31,49 @@ display: none;
  }
 `
 const LinkMenu2 = styled.div`
+
 width: 20%;
 display: flex;
 flex-direction: row;
+display: flex;
+width: auto;
+width: auto;
 align-items: center;
 justify-content: center;
+
+
+@media screen and (min-width: 760px){
 display: none;
 
-  
+}
+`
+const LinkMenu3 = styled.div`
+width: 20%;
 
-@media screen and (max-width: 760px){
-display: block;
-width: auto;
-width: auto;
-    position: absolute;
-    top: 6px;
-    right: 72px;
+@media screen and (max-width: 761px){
+display: none;
 }
 `
 
 const Linksnav = () => (
 <>
  <LinkContener>
-   
-           <Logo  className="logostyls" />
-   
-    <LinkMenu >
-
-        <LinksStyle  to ="/"><HomeIcon/>Home</LinksStyle>
+        <Logo  className="logostyls" />
+      <LinkMenu >
+        <LinksStyle  to ="/"><HomeIcon /> Home</LinksStyle>
         <LinksStyle  to ="/page-2/">Realzacje</LinksStyle>
         <LinksStyle  to ="#">Cennik</LinksStyle>
         <LinksStyle  to ="#">O mnie</LinksStyle>
         <LinksStyle  to ="#">Kontakt</LinksStyle>
      </LinkMenu >
      <LinkMenu2 >
-        <LinksStyle  to ="#"><HmburgerIcon/>Menu</LinksStyle>
-        <LinksStyle  to ="#"><SearchIcon/> Szukaj</LinksStyle>
+        <LinksStyle  to ="#"><HmburgerIcon/></LinksStyle>
+        <LinksStyle  to ="#"><SearchIcon/></LinksStyle>
      </LinkMenu2 >
+     <LinkMenu3 >
+          <SearchTop/>
+     </LinkMenu3 >
   </LinkContener>
 </>                 
 )
-export default Linksnav
+export default Linksnav;

@@ -5,6 +5,8 @@ import { fas } from '@fortawesome/free-solid-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faSearch} from '@fortawesome/free-solid-svg-icons'
 
+
+
 library.add(fas, fab)
 
 const SearchIcon = () =>(

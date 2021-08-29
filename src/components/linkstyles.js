@@ -5,10 +5,12 @@ import { Link } from "gatsby"
 
 
 const LinksStyle = styled(Link)`
+display: inline-block;
 color: white;
 margin: 0 20px;
 text-decoration: none;
 transition:5ms;
+text-align: center;
 
 
 :hover{

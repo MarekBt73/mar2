@@ -10,7 +10,7 @@ library.add(fas, fab)
 
 const FaHome = () =>(
 <>
-    < FontAwesomeIcon icon={faHome} />
+    < FontAwesomeIcon className="homeicon" icon={faHome} />
 </>
 )
 

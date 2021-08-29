@@ -6,7 +6,7 @@ import Linksnav from "./linksnav"
  
 const HeaderStyle = styled.header`
 
-height: 50px;
+height: 60px;
 background-color: #000000;
 display: flex;
 flex-direction: row;
@@ -17,7 +17,7 @@ background-color: #a605e8;
 
 @media screen and (max-width: 760px){
   
-  height:auto
+  height:60px
   }
 position: relative;
 
