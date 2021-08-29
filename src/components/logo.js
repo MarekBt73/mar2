@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 
+
 const LogoDiv = styled.div`
 display: flex;
 flex-direction: row;

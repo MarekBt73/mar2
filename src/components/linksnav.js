@@ -38,10 +38,12 @@ display: flex;
 flex-direction: row;
 align-items: center;
 justify-content: center;
+display: none;
 
   
 
 @media screen and (max-width: 760px){
+display: block;
 width: auto;
 width: auto;
     position: absolute;
@@ -49,7 +51,6 @@ width: auto;
     right: 72px;
 }
 `
-
 
 const Linksnav = () => (
 <>
