@@ -26,6 +26,7 @@ width: 100%;
 `
 const MainStyle = styled.main`
 margin: 25px;
+width: 100vh;
 `
 
 

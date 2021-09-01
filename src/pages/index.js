@@ -11,7 +11,7 @@ const IndexPage = () => (
     <h1>Blog marka</h1>
     <p>Witam na moim blogu </p>
     <p>Zapraszam do współpracy</p>
-    <StaticImage
+    <StaticImage className="image2"
       src="../images/gatsby-astronaut.png" formats={["AUTO", "WEBP", "AVIF"]}  alt="A Gatsby astronaut" />
     <p>
    

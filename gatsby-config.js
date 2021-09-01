@@ -45,6 +45,23 @@ module.exports = {
     },
 
    `gatsby-plugin-fontawesome-css`,
+   {
+    resolve: 'gatsby-plugin-htaccess',
+    options: {
+      RewriteBase: '/custom/',
+      https: true,
+      www: true,
+      SymLinksIfOwnerMatch: true,
+      host: 'blog.modernb2c.pl', // if 'www' is set to 'false', be sure to also remove it here!
+      ErrorDocument: `
+        ErrorDocument 401 /error_pages/401.html
+        ErrorDocument 404 /error_pages/404.html
+        ErrorDocument 500 /error_pages/500.html
+      `,
+    
+    },
+  },
+  `gatsby-plugin-netlify-cms`,
 
   ],
 }
